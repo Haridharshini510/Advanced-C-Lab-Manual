@@ -15,7 +15,7 @@ Algorithm:
 4.	Exit the program.
  
 Program:
-
+```
 #include<stdio.h> #include<math.h>
 int main()
 {
@@ -72,6 +72,7 @@ printf("Greater than 13");
 }
 }
 }
+```
 Output
 
 
