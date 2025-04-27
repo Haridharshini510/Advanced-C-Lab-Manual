@@ -12,12 +12,19 @@ Algorithm:
 7.	Use the display function to visualize the stack's contents
  
 Program:
-
-//type your code here
-
+```
+int stack[40],top,i;
+void display()
+{
+for(i=top;i>=0;i--)
+{
+printf("%d\n",stack[i]);
+}
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/ed60a058-66e4-4335-b212-a51e320f92a3)
 
 
 
@@ -35,12 +42,24 @@ Algorithm:
 4.	Call the push function as needed.
  
 Program:
-
-//type your code here
-
+```
+int size=3,top=1;
+ float stack[40];
+void push (float data)
+{
+if (top==size-1 )
+{
+printf("stack is full\n");
+}
+else
+{
+top ++; stack[top] = data;
+}
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/70689756-0243-4147-9772-41938e2c057a)
 
 
 
@@ -61,12 +80,26 @@ Algorithm:
 4.	Call the display function and perform other queue operations as needed.
  
 Program:
-
-//type your code here
-
+```
+int queue[50], rear, front,i;
+ void display()
+{
+if(front==-1)
+{
+printf("No elements to display");
+}
+else
+{
+for(i=front;i<=rear;i++)
+{
+printf("%d ",queue[i]);
+}
+}
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/d0fc6ee3-fad4-4e83-8d97-c9fc5c75f216)
 
 
 Result:
@@ -85,12 +118,24 @@ Algorithm:
 4.	Call the enqueue function as needed.
 
 Program:
-
-//type your code here
-
+```
+int size=4, rear=-1, front=-1;
+float queue[50];
+void enqueue(float data)
+{
+if(rear<size)
+{
+if(front==-1)
+{
+front=0;
+}
+rear=rear+1; queue[rear]=data;
+}
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/387c8e20-6e62-4127-8bdd-2f71223d2b15)
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -120,12 +165,22 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 
 Program:
-
-//type your code here
-
+```
+int front, rear;
+void dequeue()
+{
+    if(front==-1&&rear==-1)
+    printf("Queue Underflow.");
+    else if(front==rear)
+    front=rear=-1;
+    else{
+        front=front+1;
+    }
+}
+```
 Output:
 
-//paste your output here
+![image](https://github.com/user-attachments/assets/b8019c28-cf52-45d8-a354-7d5e41c121ef)
 
 
 Result:
