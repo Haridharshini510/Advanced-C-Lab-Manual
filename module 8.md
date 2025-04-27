@@ -73,19 +73,11 @@ printf("Greater than 13");
 }
 }
 ```
-Output
-
-
-
 
 Output:
 
 
-//paste your output here
-
-
-
-
+![image](https://github.com/user-attachments/assets/7170a74f-5916-4c31-b786-1c2a6db8abe6)
 
 
 Result:
@@ -104,8 +96,25 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include<stdio.h> #include<string.h> int main()
+{
+char a[50]; scanf("%s",a); int l=strlen(a); char h='0';
+for(int i=0;i<4;i++)
+{
+int c=0;
+for(int j=0;j<l;j++)
+{
+if(a[j]==h)
+{
+c+=1;
+}
+}
+printf("%d ",c); h++;
+}
+}
 
+```
 
 
 
