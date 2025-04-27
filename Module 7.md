@@ -79,19 +79,33 @@ Algorithm:
  
 Program:
 #include<stdio.h> 
+
 struct numbers
+
 {
+
 int a; int b;
+
 }n;
+
 int add(struct numbers n); 
+
 int main()
+
 {
+
 scanf("%d %d ",&n.a,&n.b);
+
 printf("%d",add(n));
+
 }
+
 int add(struct numbers n)
+
 {
+
 return n.a+n.b;
+
 }
 
 Output:
@@ -132,15 +146,25 @@ Use scanf to input the file name into the name array.
 Program:
 
 #include <stdio.h> 
+
 int main()
+
 {
+
 FILE *p;
+
 char name[30]; scanf("%s",name);
+
 printf("%s File Created Successfully",name); 
+
 p=fopen("name","w");
+
 printf("\n%s File Opened",name); 
+
 fclose(p);
+
 printf("\n%s File Closed",name);
+
 }
 
 Output:
@@ -176,19 +200,29 @@ Use scanf to input the file name into the name array and the number of strings i
 Program:
 
 #include <stdio.h>
-int main()
-{
+
+int main(){
+
 FILE *p;
+
 char name[20];
+
 int num;
+
 char text[50];
+
 scanf("%s%d",name,&num);
+
 p=fopen("name","w"); 
+
 printf("%s Opened",name);
-for(int i=0;i<num;i++)
-{
+
+for(int i=0;i<num;i++){
+
 scanf("%s",text); fputs(text,p);
+
 }
+
 printf("\nData added Successfully");
 
 }
@@ -237,29 +271,46 @@ Algorithm:
 Program:
 
 #include <stdio.h>
+
 #include <stdlib.h>
-struct Subject
-{
+
+struct Subject{
+
     char name[20];
+    
     int marks;
 };
+
 int main()
+
 {
     int i,n;
+    
     scanf("%d",&n);
+    
     struct Subject *s = (struct Subject *)malloc(n*sizeof(struct Subject));
+    
     if(s==NULL)
+    
     {
         printf("Memory Alocation Failed\n");
+        
         return 1;
     }
+    
     for(i=0;i<n;i++)
+    
     {
+    
         scanf("%s %d",s[i].name,&s[i].marks);
+        
     }
     for(i=0;i<n;i++)
+    
     {
+    
         printf("%s  %d\n",s[i].name,s[i].marks);
+        
     }
     
     free (s);
