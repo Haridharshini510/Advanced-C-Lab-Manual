@@ -169,7 +169,7 @@ Algorithm:
 
 
 Program:
-``
+```
 #include<stdio.h> int main()
 {
 int n; scanf("%d",&n); int a[n];
@@ -181,6 +181,7 @@ scanf("%d",&a[i]); sum=sum+a[i];
 printf("%d",sum);
 }
 ```
+
 Output:
 ![image](https://github.com/user-attachments/assets/45fc4dd4-7db6-4666-8ba0-fc8cdaa17c0f)
 
@@ -192,9 +193,7 @@ Thus, the program prints the sum of the integers in the array is verified succes
 
 
  
-EXP NO 25: C PROGRAM TO COUNT THE NUMBER OF WORDS IN A      SENTENCE
-
-
+EXP NO 25: C PROGRAM TO COUNT THE NUMBER OF WORDS IN A SENTENCE
 
 Aim:
 
@@ -213,6 +212,7 @@ o	If a character is not a space, it may belong to a word. If it's the first non-
 
 
 Program:
+
 ```
 #include<stdio.h>
 #include<string.h>
@@ -230,8 +230,9 @@ int main()
      printf("Total number of words in the string is :%d",count);
     return 0;
 }
-
 ```
+
+
 Output:
 ![image](https://github.com/user-attachments/assets/d90ac9a3-86bc-471b-838a-0ffce5f61931)
 
